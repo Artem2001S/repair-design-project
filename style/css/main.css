@@ -38,8 +38,109 @@
   font-style: normal;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  background: #131313;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1256px;
+}
+
+.header__phone-number {
+  color: #E3B873;
+  font-family: "FuturaDemiC", serif, "Tahoma";
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #E3B873;
+}
+
+.header__phone-number:hover {
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.logo__text {
+  margin: 0;
+  color: #E3B873;
+  font-family: "FuturaDemiC", serif, "Tahoma";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 581px;
+}
+
+.nav__item {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "FuturaBookC", serif, "Tahoma";
+  font-size: 14px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  color: #E3B873;
+}
+
+.btn {
+  background: #E3B873;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 11px 33px;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 4px 4px rgba(227, 184, 115, 0.25);
+          box-shadow: 0 4px 4px rgba(227, 184, 115, 0.25);
+}
+
 p,
 body {
   margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

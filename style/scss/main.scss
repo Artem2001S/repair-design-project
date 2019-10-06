@@ -1,6 +1,17 @@
-@import './fonts';
-
+$black: #131313;
+$gold: #E3B873;
+$white: #ffffff;
+@import "./fonts";
+@import "./header";
+@import "./nav";
+@import "./btn";
 p,
 body {
   margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }

@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  background: $black;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1256px;
+  }
+
+  &__phone-number {
+    color: $gold;
+    font-family: "FuturaDemiC", serif, "Tahoma";
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid $gold;
+		
+		&:hover {
+			color: $white;
+			border-bottom: none;
+		}
+  }
+}
+
+.logo {
+  &__text {
+    margin: 0;
+    color: $gold;
+    font-family: "FuturaDemiC", serif, "Tahoma";
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
