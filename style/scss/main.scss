@@ -32,3 +32,9 @@ body {
 .gold-text {
 	color: $gold;
 }
+
+@media (max-width: 980px) {
+	html {
+		font-size: 17px;
+	}
+}

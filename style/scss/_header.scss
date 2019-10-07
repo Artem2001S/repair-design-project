@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: center;
   padding-top: 24px;
-	padding-bottom: 22px;
-	padding: 24px 4px 22px 4px;
+  padding-bottom: 22px;
+  padding: 24px 8px 22px 15px;
   background: $black;
-	
+
   &-list {
     display: flex;
     justify-content: space-between;
@@ -21,13 +21,13 @@
     font-size: 0.7rem;
     text-decoration: none;
     border-bottom: 1px solid $gold;
-		
-		transition: color 0.4s;
 
-		&:hover {
-			color: $white;
-			border-bottom: none;
-		}
+    transition: color 0.4s;
+
+    &:hover {
+      color: $white;
+      border-bottom: none;
+    }
   }
 }
 
@@ -38,5 +38,30 @@
     font-family: "FuturaDemiC", $additionalFonts;
     font-size: 0.7rem;
     text-transform: uppercase;
+  }
+}
+
+//----------- media
+
+@media (max-width: 792px) {
+  .header {
+    &-list {
+      flex-wrap: wrap;
+    }
+    &__contacts + .btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    &__phone-number {
+			color: $white;
+			border-bottom: none;
+			&:hover,:active {
+				color: $gold;
+			}
+    }
   }
 }

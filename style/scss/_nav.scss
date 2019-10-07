@@ -1,20 +1,42 @@
 .nav {
   display: flex;
-	justify-content: space-between;
-	width: 40%;
+  justify-content: space-between;
+  width: 40%;
 
   &__item {
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "FuturaBookC", $additionalFonts;
-		font-size: 0.7rem;
+    font-size: 0.7rem;
 
-		transition: color 0.4s; 
-		cursor: pointer;
-		
-		&:hover {
-			color: $gold;
-		}
-	}
+    transition: color 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+// media --------------
+
+@media (max-width: 825px) {
+  .nav {
+    &__item {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    width: 53%;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    display: none;
+  }
 }
