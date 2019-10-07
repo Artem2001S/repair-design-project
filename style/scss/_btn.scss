@@ -1,18 +1,36 @@
 .btn {
-	background: $gold;
-	color: $white;
+	padding: 11px 33px;
+  background: $gold;
+  color: $white;
+	
   text-transform: uppercase;
-  padding: 11px 33px;
-  font-family: FuturaDemiC;
-  font-size: 13px;
+  font-family: "FuturaDemiC", $additionalFonts;
+  font-size: 0.65rem;
   line-height: 15px;
   outline: none;
   border: none;
   border-radius: 2px;
-	line-height: normal;
-	cursor: pointer;
+  line-height: normal;
 	
-	&:hover {
-		box-shadow: 0 4px 4px rgba($color: $gold, $alpha: 0.25);
-	}
+	transition: 0.3s box-shadow;
+	cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba($color: $gold, $alpha: 0.25);
+  }
+
+  &_large {
+    padding: 18px 40px;
+  }
+
+  &_transparent {
+    background: transparent;
+  }
+
+  &_white-border {
+    border: 1px solid $white;
+    &:hover {
+      box-shadow: 2px 2px 18px rgba($color: $white, $alpha: 0.25);
+    }
+  }
 }

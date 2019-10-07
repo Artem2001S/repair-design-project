@@ -1,0 +1,130 @@
+.banner {
+  &__wrap {
+    position: relative;
+    display: flex;
+  }
+
+  &__image {
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    width: 95%;
+    position: relative;
+  }
+
+  &__main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 27%;
+    left: 4%;
+  }
+
+  &__title {
+    max-width: 44%;
+    color: $white;
+    font-family: "Yeseva One", $additionalFonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 20px;
+    max-width: 35%;
+    color: $white;
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+
+  &__buttons {
+    margin-top: 41px;
+    & .btn:nth-child(2) {
+      margin-left: 20px;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 247px;
+    height: 14%;
+    transform: translateY(50%);
+
+    background: $black;
+    color: $white;
+
+    font-family: Yeseva One, $additionalFonts;
+    font-size: 0.7rem;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: 0.6s background-color, 0.5s color;
+
+    &:hover {
+      background-color: $gold;
+      color: $black;
+      justify-content: center;
+
+      .banner__scroll-icon {
+        display: none;
+      }
+    }
+
+    &-icon {
+      margin-left: 12px;
+    }
+  }
+
+  &__instagram {
+    display: inline-flex;
+    justify-content: center;
+    width: 6%;
+    background: $black;
+    padding-top: 17%;
+
+    &-link {
+      position: relative;
+      color: $gold;
+      writing-mode: vertical-lr;
+      text-decoration: none;
+      font-family: "FuturaDemiC", $additionalFonts;
+      font-size: 0.7rem;
+      line-height: 16px;
+      transition: 0.5s color;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 97px;
+        height: 51px;
+        width: 1px;
+
+        background: $gold;
+      }
+
+      &:hover {
+        color: rgb(212, 144, 65);
+        &::after {
+          background: rgb(212, 144, 65);
+        }
+      }
+    }
+  }
+}

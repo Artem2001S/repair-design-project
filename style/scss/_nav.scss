@@ -1,14 +1,14 @@
 .nav {
   display: flex;
 	justify-content: space-between;
-	width: 581px;
+	width: 40%;
 
   &__item {
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "FuturaBookC", serif, "Tahoma";
-		font-size: 14px;
+    font-family: "FuturaBookC", $additionalFonts;
+		font-size: 0.7rem;
 
 		transition: color 0.4s; 
 		cursor: pointer;

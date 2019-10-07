@@ -1,10 +1,23 @@
 $black: #131313;
 $gold: #E3B873;
 $white: #ffffff;
+
+$additionalFonts: sans-serif, "Tahoma";
+
+html {
+	font-size: 20px;
+}
+
 @import "./fonts";
 @import "./header";
 @import "./nav";
 @import "./btn";
+@import "./banner";
+
+* {
+	box-sizing: border-box;
+}
+
 p,
 body {
   margin: 0;
@@ -14,4 +27,8 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.gold-text {
+	color: $gold;
 }

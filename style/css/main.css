@@ -1,3 +1,7 @@
+html {
+  font-size: 20px;
+}
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../../assets/fonts/ProximaNova-Regular.eot");
@@ -9,7 +13,7 @@
 @font-face {
   font-family: "FuturaBookC";
   src: url("../../assets/fonts/FuturaBookC.eot");
-  src: url("../../assets/fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("FuturaBookC.woff2") format("woff2"), url("../../assets/fonts/FuturaBookC.woff") format("woff"), url("../../assets/fonts/FuturaBookC.ttf") format("truetype");
+  src: url("../../assets/fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaBookC.woff2") format("woff2"), url("../../assets/fonts/FuturaBookC.woff") format("woff"), url("../../assets/fonts/FuturaBookC.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +21,7 @@
 @font-face {
   font-family: "FuturaDemiC";
   src: url("../../assets/fonts/FuturaDemiC.eot");
-  src: url("../../assets/fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("FuturaDemiC.woff2") format("woff2"), url("../../assets/fonts/FuturaDemiC.woff") format("woff"), url("../../assets/fonts/FuturaDemiC.ttf") format("truetype");
+  src: url("../../assets/fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaDemiC.woff2") format("woff2"), url("../../assets/fonts/FuturaDemiC.woff") format("woff"), url("../../assets/fonts/FuturaDemiC.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +37,7 @@
 @font-face {
   font-family: "Yeseva One";
   src: url("../../assets/fonts/YesevaOne.eot");
-  src: url("../../assets/fonts/YesevaOne.eot?#iefix") format("embedded-opentype"), url("YesevaOne.woff2") format("woff2"), url("../../assets/fonts/YesevaOne.woff") format("woff"), url("../../assets/fonts/YesevaOne.ttf") format("truetype");
+  src: url("../../assets/fonts/YesevaOne.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/YesevaOne.woff2") format("woff2"), url("../../assets/fonts/YesevaOne.woff") format("woff"), url("../../assets/fonts/YesevaOne.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,6 +54,7 @@
           justify-content: center;
   padding-top: 24px;
   padding-bottom: 22px;
+  padding: 24px 4px 22px 4px;
   background: #131313;
 }
 
@@ -69,10 +74,12 @@
 
 .header__phone-number {
   color: #E3B873;
-  font-family: "FuturaDemiC", serif, "Tahoma";
-  font-size: 14px;
+  font-family: "FuturaDemiC", sans-serif, "Tahoma";
+  font-size: 0.7rem;
   text-decoration: none;
   border-bottom: 1px solid #E3B873;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .header__phone-number:hover {
@@ -83,8 +90,8 @@
 .logo__text {
   margin: 0;
   color: #E3B873;
-  font-family: "FuturaDemiC", serif, "Tahoma";
-  font-size: 14px;
+  font-family: "FuturaDemiC", sans-serif, "Tahoma";
+  font-size: 0.7rem;
   text-transform: uppercase;
 }
 
@@ -95,15 +102,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 581px;
+  width: 40%;
 }
 
 .nav__item {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "FuturaBookC", serif, "Tahoma";
-  font-size: 14px;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.7rem;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
   cursor: pointer;
@@ -114,23 +121,197 @@
 }
 
 .btn {
+  padding: 11px 33px;
   background: #E3B873;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 11px 33px;
-  font-family: FuturaDemiC;
-  font-size: 13px;
+  font-family: "FuturaDemiC", sans-serif, "Tahoma";
+  font-size: 0.65rem;
   line-height: 15px;
   outline: none;
   border: none;
   border-radius: 2px;
   line-height: normal;
+  -webkit-transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s box-shadow;
+  transition: 0.3s box-shadow, 0.3s -webkit-box-shadow;
   cursor: pointer;
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 4px 4px rgba(227, 184, 115, 0.25);
-          box-shadow: 0 4px 4px rgba(227, 184, 115, 0.25);
+  -webkit-box-shadow: 0 4px 8px rgba(227, 184, 115, 0.25);
+          box-shadow: 0 4px 8px rgba(227, 184, 115, 0.25);
+}
+
+.btn_large {
+  padding: 18px 40px;
+}
+
+.btn_transparent {
+  background: transparent;
+}
+
+.btn_white-border {
+  border: 1px solid #ffffff;
+}
+
+.btn_white-border:hover {
+  -webkit-box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.25);
+          box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.25);
+}
+
+.banner__wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner__image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner__content {
+  width: 95%;
+  position: relative;
+}
+
+.banner__main {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 27%;
+  left: 4%;
+}
+
+.banner__title {
+  max-width: 44%;
+  color: #ffffff;
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.banner__description {
+  margin-top: 20px;
+  max-width: 35%;
+  color: #ffffff;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+.banner__buttons {
+  margin-top: 41px;
+}
+
+.banner__buttons .btn:nth-child(2) {
+  margin-left: 20px;
+}
+
+.banner__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 247px;
+  height: 14%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background: #131313;
+  color: #ffffff;
+  font-family: Yeseva One, sans-serif, "Tahoma";
+  font-size: 0.7rem;
+  line-height: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.6s background-color, 0.5s color;
+  transition: 0.6s background-color, 0.5s color;
+}
+
+.banner__scroll:hover {
+  background-color: #E3B873;
+  color: #131313;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner__scroll:hover .banner__scroll-icon {
+  display: none;
+}
+
+.banner__scroll-icon {
+  margin-left: 12px;
+}
+
+.banner__instagram {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6%;
+  background: #131313;
+  padding-top: 17%;
+}
+
+.banner__instagram-link {
+  position: relative;
+  color: #E3B873;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-decoration: none;
+  font-family: "FuturaDemiC", sans-serif, "Tahoma";
+  font-size: 0.7rem;
+  line-height: 16px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  text-transform: uppercase;
+}
+
+.banner__instagram-link::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 97px;
+  height: 51px;
+  width: 1px;
+  background: #E3B873;
+}
+
+.banner__instagram-link:hover {
+  color: #d49041;
+}
+
+.banner__instagram-link:hover::after {
+  background: #d49041;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 p,
@@ -142,5 +323,9 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.gold-text {
+  color: #E3B873;
 }
 /*# sourceMappingURL=main.css.map */
