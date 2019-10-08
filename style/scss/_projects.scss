@@ -1,0 +1,234 @@
+.projects {
+  background: $black;
+  height: 1074px;
+  padding-top: 5rem;
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    padding-top: 3.4rem;
+    // max-width: 442px;
+    width: 32%;
+    margin-left: 7%;
+  }
+
+  &__label {
+    margin-bottom: 2.2rem;
+		max-width: 78%;
+
+		color: $white;
+
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 1.6rem;
+    color: $gold;
+
+    font-family: "Yeseva One", $additionalFonts;
+    font-size: 1.35rem;
+    line-height: 1.85rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 8.1rem;
+      bottom: 0.9rem;
+      width: 4.6rem;
+      height: 1px;
+      background: $gold;
+    }
+  }
+
+  &__descriptions {
+    height: 156px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    &-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      margin-bottom: 0.3rem;
+      color: $gold;
+
+      font-family: "Yeseva One", $additionalFonts;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+      text-transform: uppercase;
+    }
+
+    &-label {
+      width: 112px;
+      color: $white;
+
+      font-family: "FuturaBookC", $additionalFonts;
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    &-slider-controls {
+      display: flex;
+      align-items: center;
+      margin-top: 4.5rem;
+    }
+  }
+
+  &__arrow-narrow {
+    &-right {
+      cursor: pointer;
+      margin-left: 1.48rem;
+      transition: transform 0.6s;
+
+      &:hover {
+        transform: translateX(0.48rem);
+      }
+    }
+
+    &-left {
+      cursor: pointer;
+      margin-right: 1.48rem;
+      transition: transform 0.6s;
+
+      &:hover {
+        transform: translateX(-0.48rem);
+      }
+    }
+  }
+
+	//---------slider
+	
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    width: 61%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+    margin-left: 3%;
+  }
+
+  &__header {
+    padding-bottom: 0.23rem;
+    color: rgba($color: $white, $alpha: 0.3);
+
+    font-family: "Yeseva One", $additionalFonts;
+    font-size: 0.7rem;
+    line-height: 0.95rem;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+
+    &_active {
+      color: $gold;
+      border-bottom: 1px solid $gold;
+      &:hover {
+        color: $gold;
+				border-bottom: 1px solid $gold;
+				opacity: 0.9;
+      }
+    }
+  }
+
+  &__images {
+    margin-top: 2.25rem;
+		overflow: hidden;
+		position: relative;
+  }
+
+  &__img {
+		display: flex;
+		max-width: 679px;
+		
+    & img {
+      width: 100%;
+      height: auto;
+		}
+
+		& img + img {
+			margin-left: 2rem;
+		}
+	}
+	
+	&__right-arrow {
+		position: absolute;
+		width: 2.75rem;
+		height: 2.75rem;
+
+		background-color: $gold;
+		background-image: url("../../assets/img/projects/right-arrow_big.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		border-radius: 50%;
+		right: 0;
+		transform: translateX(-2.1rem);
+
+		top: calc(50% - 1.375rem);
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0px 0px 15px rgba($color: $gold, $alpha: 0.5);
+		}
+	}
+}
+// dots ----------------------------
+.dots {
+  display: flex;
+
+  &__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: $white;
+    border-radius: 50%;
+
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s;
+
+    &:hover,
+    &:active {
+			background: $gold;
+      opacity: 1;
+    }
+		
+		&_active {
+			opacity: 1;
+			&:hover {
+				background: $white;
+				opacity: 0.7;
+			}
+		}
+    & + & {
+      margin-left: 0.9rem;
+    }
+  }
+}

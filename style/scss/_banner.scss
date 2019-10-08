@@ -13,7 +13,8 @@
 
   &__content {
     position: relative;
-    width: 95%;
+		width: 95%;
+		background: $black;
   }
 
   &__main {
@@ -288,11 +289,8 @@
       font-size: 1.4rem;
     }
   }
-}
-
-@media (max-width: 400px) {
-  .banner {
-    &__buttons {
+	.banner {
+		&__buttons {
 			display: flex;
 			flex-direction: column;
 			padding-right: 4%;
@@ -301,28 +299,30 @@
 				margin-top: 1rem;
 			}
 		}
-  }
+	}
 }
 
-@media (max-width: 387px) {
+
+
+@media (max-width: 395px) {
   .banner {
     &__title {
       max-width: 96%;
     }
     &__description {
-     max-width: 78%;
+      max-width: 78%;
     }
   }
 }
-
 
 @media (max-width: 375px) {
   .banner {
     &__title {
       font-size: 1.35rem;
-    }
+		}
+		
     &__description {
       font-size: 1.05rem;
-		}
+    }
   }
 }
