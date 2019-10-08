@@ -87,7 +87,7 @@
 						<div class="projects-mobile-slider">
 							<div class="projects-mobile-slider__wrap">
 								<div class="projects-mobile-slider__img">
-									<img  src="assets/img/projects/slider_main-img.jpg" alt="Slider item">
+									<img src="assets/img/projects/slider_main-img.jpg" alt="Slider item">
 									<div class="projects-mobile-slider__arrow projects-mobile-slider__arrow_right"></div>
 									<div class="projects-mobile-slider__arrow projects-mobile-slider__arrow_left"></div>
 								</div>
@@ -166,22 +166,53 @@
 				</div>
 			</section><!-- ./projects-->
 
-			<section class="online-control">
-				<div class="online-control__title">
-
-				</div>
-				<div class="online-control__video">
-
-				</div>
-				<div class="online-control-description">
-
-				</div>
-				<div class="online-control__form">
-
-				</div>
-			</section>
 
 			<section class="types-of-repair">
+				<section class="online-control">
+					<div class="online-control__title title">
+						Online control
+						<div class="online-control__title-decoration">
+							<img width="33" height="28" src="./assets/img/online-control/video_camera.svg" alt="Video cam">
+						</div>
+					</div>
+					<div class="online-control__video">
+						<iframe src="https://www.youtube.com/embed/GPun-3Qcxa4" frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<section class="online-control-form">
+						<div class="online-control-form__line"></div>
+						<div class="online-control-form__label">
+							At each facility, a camera is installed that broadcasts the progress of work on the clock. <br> At any time,
+							you
+							can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+							from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.
+						</div>
+						<form class="online-control-form__form" action="#" method="GET">
+							<div class="online-control-form__wrap">
+								<div class="input-item">
+									<label for="clientName">Name</label>
+									<input type="text" name="clientName" placeholder="What is your name:" id="clientName" required>
+								</div>
+								<div class="input-item">
+									<label for="clientPhoneNumber">Phone</label>
+									<input type="text" name="clientPhoneNumber" placeholder="Your phone number:" id="clientPhoneNumber"
+										required>
+								</div>
+								<div>
+									<input type="button" class="btn btn_large" value="Sumbit">
+								</div>
+							</div>
+							<div class="input-item online-control-form__form-checkbox">
+								<label for="isAgreeCheckbox">
+									<input type="checkbox" name="isAgree" id="isAgreeCheckbox" value="agree" required>
+									I agree to the processing of personal data
+								</label>
+							</div>
+						</form>
+					</section> <!-- ./online-control-form -->
+				</section> <!-- ./online-control-->
+
+
 				<div class="types-of-repair__title">
 
 				</div>

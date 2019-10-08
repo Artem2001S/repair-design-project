@@ -1,0 +1,32 @@
+.input-item {
+  display: flex;
+  flex-direction: column;
+  & input {
+    width: 231px;
+    padding-bottom: 0.2rem;
+    background: transparent;
+
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+
+    color: $text-black;
+
+    border: none;
+    border-bottom: 1px solid rgba($color: $text-black, $alpha: 0.3);
+    outline: none;
+
+    &::placeholder {
+      font-family: "FuturaBookC", $additionalFonts;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      color: $text-black;
+    }
+  }
+
+  & label {
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 0.75rem;
+    color: rgba($color: $text-black, $alpha: 0.5);
+  }
+}

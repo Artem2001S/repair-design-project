@@ -16,11 +16,12 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba($color: $gold, $alpha: 0.25);
+    box-shadow: 0 4px 18px rgba($color: $gold, $alpha: 0.35);
   }
 
   &_large {
-    padding: 0.9rem 2rem;
+		padding: 0.9rem 2rem;
+		min-width: 10rem;
   }
 
   &_transparent {
@@ -30,7 +31,7 @@
   &_white-border {
     border: 1px solid $white;
     &:hover {
-      box-shadow: 2px 2px 18px rgba($color: $white, $alpha: 0.25);
+      box-shadow: 2px 2px 18px rgba($color: $white, $alpha: 0.35);
     }
   }
 }

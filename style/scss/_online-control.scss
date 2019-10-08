@@ -1,0 +1,15 @@
+.online-control {
+  margin-top: -300px;
+
+  &__video {
+    padding-top: 1.5rem;
+    width: 100%;
+    max-width: 817px;
+    margin: auto;
+
+    & iframe {
+      width: 100%;
+      height: 434px;
+    }
+	}
+}

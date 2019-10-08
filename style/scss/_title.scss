@@ -1,0 +1,37 @@
+.title {
+  position: relative;
+
+  color: $white;
+
+  font-family: "Yeseva One";
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  &_black {
+    color: $title-black;
+  }
+
+  & div img {
+    margin-top: 0.6rem;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 2px;
+
+    bottom: 0;
+    left: calc(50% - 0.8rem);
+
+    background: $gold;
+    transform: translateX(2.1rem) translateY(-19px);
+  }
+
+  &::before {
+    transform: translateX(-2.1rem) translateY(-19px);
+  }
+}

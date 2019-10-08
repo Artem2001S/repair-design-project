@@ -1,4 +1,8 @@
 $black: #131313;
+$title-black: #181818;
+$text-black: #363636;
+
+
 $gold: #e3b873;
 $white: #ffffff;
 
@@ -18,9 +22,15 @@ html {
 @import "./header";
 @import "./nav";
 @import "./btn";
+@import "./input-item";
 @import "./banner";
 @import "./projects";
 @import "./projects-mobile-slider";
+@import "./title";
+@import "./online-control";
+@import "./online-control-form";
+@import "./types-of-repair";
+
 
 * {
   box-sizing: border-box;

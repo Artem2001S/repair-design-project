@@ -178,12 +178,13 @@ html {
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 4px 8px rgba(227, 184, 115, 0.25);
-          box-shadow: 0 4px 8px rgba(227, 184, 115, 0.25);
+  -webkit-box-shadow: 0 4px 18px rgba(227, 184, 115, 0.35);
+          box-shadow: 0 4px 18px rgba(227, 184, 115, 0.35);
 }
 
 .btn_large {
   padding: 0.9rem 2rem;
+  min-width: 10rem;
 }
 
 .btn_transparent {
@@ -195,8 +196,8 @@ html {
 }
 
 .btn_white-border:hover {
-  -webkit-box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.25);
-          box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.35);
+          box-shadow: 2px 2px 18px rgba(255, 255, 255, 0.35);
 }
 
 @media (max-width: 750px) {
@@ -206,6 +207,63 @@ html {
   .btn_large {
     padding: 0.7rem 1.7rem;
   }
+}
+
+.input-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-item input {
+  width: 231px;
+  padding-bottom: 0.2rem;
+  background: transparent;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  outline: none;
+}
+
+.input-item input::-webkit-input-placeholder {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+}
+
+.input-item input:-ms-input-placeholder {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+}
+
+.input-item input::-ms-input-placeholder {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+}
+
+.input-item input::placeholder {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+}
+
+.input-item label {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.75rem;
+  color: rgba(54, 54, 54, 0.5);
 }
 
 .banner__wrap {
@@ -943,6 +1001,136 @@ html {
   .projects-mobile-slider__img, .projects-mobile-slider__wrap {
     width: 340px;
   }
+}
+
+.title {
+  position: relative;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title_black {
+  color: #181818;
+}
+
+.title div img {
+  margin-top: 0.6rem;
+}
+
+.title::after, .title::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 2px;
+  bottom: 0;
+  left: calc(50% - 0.8rem);
+  background: #e3b873;
+  -webkit-transform: translateX(2.1rem) translateY(-19px);
+          transform: translateX(2.1rem) translateY(-19px);
+}
+
+.title::before {
+  -webkit-transform: translateX(-2.1rem) translateY(-19px);
+          transform: translateX(-2.1rem) translateY(-19px);
+}
+
+.online-control {
+  margin-top: -300px;
+}
+
+.online-control__video {
+  padding-top: 1.5rem;
+  width: 100%;
+  max-width: 817px;
+  margin: auto;
+}
+
+.online-control__video iframe {
+  width: 100%;
+  height: 434px;
+}
+
+.online-control-form__line {
+  display: block;
+  margin: auto;
+  margin-top: 3.1rem;
+  width: 55px;
+  height: 2px;
+  background: #e3b873;
+}
+
+.online-control-form__label {
+  margin: auto;
+  margin-top: 1.55rem;
+  width: 100%;
+  max-width: 681px;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 1rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #363636;
+}
+
+.online-control-form__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.online-control-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4.5rem;
+}
+
+.online-control-form__form-checkbox {
+  margin-top: 1.75rem;
+}
+
+.online-control-form__form-checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #363636;
+}
+
+.online-control-form__form-checkbox label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-right: 0.45rem;
+}
+
+.online-control-form__form div + div {
+  margin-left: 2.8rem;
 }
 
 * {
