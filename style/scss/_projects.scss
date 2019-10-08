@@ -19,9 +19,9 @@
 
   &__label {
     margin-bottom: 2.2rem;
-		max-width: 78%;
+    max-width: 78%;
 
-		color: $white;
+    color: $white;
 
     font-family: "FuturaBookC", $additionalFonts;
     font-size: 0.9rem;
@@ -116,8 +116,8 @@
     }
   }
 
-	//---------slider
-	
+  //---------slider
+
   &__slider {
     display: flex;
     flex-direction: column;
@@ -128,7 +128,6 @@
     display: flex;
     justify-content: space-between;
     width: 73%;
-    margin-left: 3%;
   }
 
   &__header {
@@ -150,55 +149,56 @@
     &_active {
       color: $gold;
       border-bottom: 1px solid $gold;
+
       &:hover {
         color: $gold;
-				border-bottom: 1px solid $gold;
-				opacity: 0.9;
+        border-bottom: 1px solid $gold;
+        opacity: 0.9;
       }
     }
   }
 
   &__images {
+    position: relative;
     margin-top: 2.25rem;
-		overflow: hidden;
-		position: relative;
+    overflow: hidden;
   }
 
   &__img {
-		display: flex;
-		max-width: 679px;
-		
+    display: flex;
+    max-width: 679px;
+
     & img {
       width: 100%;
       height: auto;
-		}
+    }
 
-		& img + img {
-			margin-left: 2rem;
-		}
-	}
-	
-	&__right-arrow {
-		position: absolute;
-		width: 2.75rem;
-		height: 2.75rem;
+    & img + img {
+      margin-left: 2rem;
+    }
+  }
 
-		background-color: $gold;
-		background-image: url("../../assets/img/projects/right-arrow_big.svg");
-		background-repeat: no-repeat;
-		background-position: center center;
+  &__right-arrow {
+    position: absolute;
+    width: 2.75rem;
+    height: 2.75rem;
 
-		border-radius: 50%;
-		right: 0;
-		transform: translateX(-2.1rem);
+    background-color: $gold;
+    background-image: url("../../assets/img/projects/right-arrow_big.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 
-		top: calc(50% - 1.375rem);
-		cursor: pointer;
+    border-radius: 50%;
+    right: 0;
+    transform: translateX(-2.1rem);
 
-		&:hover {
-			box-shadow: 0px 0px 15px rgba($color: $gold, $alpha: 0.5);
-		}
-	}
+    top: calc(50% - 1.375rem);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 15px rgba($color: $gold, $alpha: 0.5);
+    }
+  }
 }
 // dots ----------------------------
 .dots {
@@ -216,19 +216,149 @@
 
     &:hover,
     &:active {
-			background: $gold;
+      background: $gold;
       opacity: 1;
     }
-		
-		&_active {
-			opacity: 1;
-			&:hover {
-				background: $white;
-				opacity: 0.7;
-			}
-		}
+
+    &_active {
+      opacity: 1;
+      &:hover {
+        background: $white;
+        opacity: 0.7;
+      }
+    }
     & + & {
       margin-left: 0.9rem;
+    }
+  }
+}
+
+// media ------------------
+
+@media (max-width: 1241px) {
+  .projects {
+    padding-top: 4.5rem;
+    &__list {
+      width: 85%;
+    }
+
+    &__left {
+      width: 38%;
+    }
+
+    &__slider {
+      width: 55%;
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1142px) {
+  .projects {
+    &__list {
+      width: 100%;
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .projects {
+    &__list {
+      justify-content: center;
+      padding-top: 1.4rem;
+    }
+
+    &__header + &__header {
+      display: none;
+    }
+
+    &__right-arrow {
+      transform: translateX(-1rem);
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .projects {
+    &__slider {
+      padding-right: 0;
+    }
+
+    &__img {
+      & img {
+        width: 380px;
+        height: auto;
+      }
+
+      & img + img {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .projects {
+		padding-top: 1.1rem;
+    &__slider {
+      display: none;
+    }
+
+    .projects {
+      &__title {
+        text-align: center;
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__left {
+      width: 90%;
+      align-items: center;
+    }
+
+    &__description-slider-controls {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+	.projects {
+
+    &__left {
+      padding-top: 0;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .projects {
+    &__left {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .projects {
+    &__label {
+      text-align: center;
+    }
+
+    &__description {
+      &-title,
+      &-label {
+        font-size: 0.83rem;
+      }
+
+      &-label {
+        width: 99px;
+      }
     }
   }
 }
