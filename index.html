@@ -182,31 +182,32 @@
 					<section class="online-control-form">
 						<div class="online-control-form__line"></div>
 						<div class="online-control-form__label">
-							At each facility, a camera is installed that broadcasts the progress of work on the clock. <br> At any time,
-							you
-							can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
-							from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.
+							At each facility, a camera is installed that broadcasts the progress of work on the clock.
+							<br class="online-control-form__br"> At any time you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+							from one of our facilities! 
+							<br class="online-control-form__br">Leave a request below and you will receive a link to the broadcast.
 						</div>
 						<form class="online-control-form__form" action="#" method="GET">
 							<div class="online-control-form__wrap">
-								<div class="input-item">
+								<div class="input-item online-control-form__item">
 									<label for="clientName">Name</label>
-									<input type="text" name="clientName" placeholder="What is your name:" id="clientName" required>
+									<input class="online-control-form__input" type="text" name="clientName"
+										placeholder="What is your name:" id="clientName" required>
 								</div>
-								<div class="input-item">
+								<div class="input-item online-control-form__item">
 									<label for="clientPhoneNumber">Phone</label>
 									<input type="text" name="clientPhoneNumber" placeholder="Your phone number:" id="clientPhoneNumber"
 										required>
 								</div>
-								<div>
-									<input type="button" class="btn btn_large" value="Sumbit">
+								<div class="online-control-form__form-button">
+									<input type="submit" class="btn btn_large" value="Sumbit">
 								</div>
-							</div>
-							<div class="input-item online-control-form__form-checkbox">
-								<label for="isAgreeCheckbox">
-									<input type="checkbox" name="isAgree" id="isAgreeCheckbox" value="agree" required>
-									I agree to the processing of personal data
-								</label>
+								<div class="input-item online-control-form__form-checkbox online-control-form__item">
+									<label for="isAgreeCheckbox">
+										<input type="checkbox" name="isAgree" id="isAgreeCheckbox" value="agree" required>
+										I agree to the processing of personal data
+									</label>
+								</div>
 							</div>
 						</form>
 					</section> <!-- ./online-control-form -->

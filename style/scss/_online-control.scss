@@ -11,5 +11,51 @@
       width: 100%;
       height: 434px;
     }
-	}
+  }
+}
+
+@media (max-width: 980px) {
+  .online-control {
+    &__video {
+      max-width: 637px;
+      & iframe {
+        height: 364px;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .online-control {
+    &__video {
+      max-width: 517px;
+      & iframe {
+        height: 294px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .online-control {
+    margin-top: -350px;
+    &__video {
+      max-width: 417px;
+      & iframe {
+        height: 224px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .online-control {
+    margin-top: -761px;
+		&__video {
+			max-width: 340px;
+			& iframe {
+				height: 207px;
+			}
+		}
+  }
 }

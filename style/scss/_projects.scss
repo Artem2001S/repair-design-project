@@ -335,6 +335,12 @@
   }
 }
 
+@media (max-width: 480px){
+	.projects {
+		height: 1520px;
+	}
+}
+
 @media (max-width: 420px) {
   .projects {
     &__left {

@@ -1,6 +1,7 @@
 .input-item {
   display: flex;
   flex-direction: column;
+
   & input {
     width: 231px;
     padding-bottom: 0.2rem;
@@ -24,9 +25,43 @@
     }
   }
 
+  & input[type="checkbox"] {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+
+      background: $white;
+      border: 1px solid $gold;
+      border-radius: 1px;
+    }
+
+    &:checked::before {
+      background-color: $gold;
+      background-image: url("../../assets/img/input-item/checkbox-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
   & label {
     font-family: "FuturaBookC", $additionalFonts;
     font-size: 0.75rem;
     color: rgba($color: $text-black, $alpha: 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .input-item {
+    & input {
+      color: $white;
+    }
   }
 }
