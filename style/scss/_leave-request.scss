@@ -1,0 +1,211 @@
+.leave-request {
+  margin-top: 90px;
+  padding-bottom: 55px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+  }
+
+  &__steps {
+    position: relative;
+    width: 526px;
+    height: 645px;
+    z-index: 1;
+    background: url("../../assets/img/leave-request/steps-background.png");
+  }
+
+  &__circle {
+    position: relative;
+    top: 55px;
+    z-index: 3;
+    left: -115px;
+    border-radius: 50%;
+    border: 3px solid $gold;
+
+    width: 646px;
+    height: 636px;
+  }
+
+  &__step {
+    position: absolute;
+    z-index: 5;
+    left: 337px;
+    top: 59px;
+
+    &:nth-child(3) {
+      left: 457px;
+      top: 199px;
+    }
+
+    &:nth-child(4) {
+      left: 487px;
+      top: 389px;
+    }
+
+    &:nth-child(5) {
+      left: 393px;
+      top: 559px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+
+      background: $gold;
+      border-radius: 50%;
+      color: $white;
+
+      font-family: "Yeseva One", $additionalFonts;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+
+      border: 15px solid $white;
+      box-sizing: content-box;
+    }
+
+    &-description {
+      padding-left: 5px;
+      width: 364px;
+      font-family: "FuturaMediumC", $additionalFonts;
+      font-size: 0.9rem;
+      line-height: 1rem;
+
+      &_small {
+        width: 250px;
+      }
+    }
+  }
+
+  &__input {
+    width: 401px;
+  }
+
+  &__form {
+    padding-left: 270px;
+    margin-top: 100px;
+    &-container {
+      & form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 0 40px;
+        padding-bottom: 78px;
+        padding-top: 28px;
+
+        background: $black;
+
+        & div + div {
+          margin-top: 50px;
+        }
+
+        & .input-item-checkbox {
+          margin-top: 1rem;
+        }
+
+        & div input {
+          border-color: rgba($color: $white, $alpha: 0.7);
+        }
+      }
+    }
+  }
+
+  &__label {
+    max-width: 287px;
+
+    color: $white;
+    font-family: "FuturaDemiC", $additionalFonts;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 49px;
+    bottom: 27px;
+  }
+
+  &__money-box {
+    position: relative;
+		padding-left: 100px;
+		margin: auto;
+		max-width: 350px;
+    margin-top: 50px;
+
+    font-family: "FuturaDemiC", $additionalFonts;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: $gold;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: calc(50% - 36px);
+      content: "";
+      width: 72px;
+      height: 72px;
+
+      background-color: $gold;
+      background-image: url("../../assets/img/leave-request/money-box.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow: 0px 10px 20px rgba($color: $gold, $alpha: 0.2);
+
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .leave-request {
+    &__input {
+      width: 350px;
+    }
+
+    & .input-item-checkbox {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .leave-request {
+    &__wrap {
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    &__steps {
+      background: url("../../assets/img/leave-request/steps-background_big.jpg");
+      width: 1000px;
+    }
+
+    &__form {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__btn {
+      right: initial;
+      left: calc(50% - 115px);
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .leave-request {
+    display: none;
+  }
+}

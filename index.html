@@ -27,7 +27,7 @@
 					<a href="#" class="nav__item">Contacts</a>
 				</nav>
 				<div class="header__contacts">
-					<a href="tel:+7 (928) 768-32-39" class="header__phone-number">
+					<a href="tel:+79287683239" class="header__phone-number">
 						+7 (928) 768-32-39
 					</a>
 				</div>
@@ -203,8 +203,8 @@
 								<div class="online-control-form__form-button">
 									<input type="submit" class="btn btn_large" value="Sumbit">
 								</div>
-								<div class="input-item online-control-form__form-checkbox online-control-form__item">
-									<label for="isAgreeCheckbox">
+								<div class="input-item-checkbox online-control-form__form-checkbox online-control-form__item">
+									<label class="input-item-checkbox__label" for="isAgreeCheckbox">
 										<input type="checkbox" name="isAgree" id="isAgreeCheckbox" value="agree" required>
 										I agree to the processing of personal data
 									</label>
@@ -291,16 +291,87 @@
 					</div>
 				</div>
 			</section><!-- ./types-of-repair -->
-
-
 			<section class="leave-request">
-				<div class="leave-request__steps">
+				<div class="leave-request__wrap">
+					<div class="leave-request__steps">
+						<div class="leave-request__circle">
+						</div>
+						<div class="leave-request__step">
+							<div class="leave-request__step-number">
+								01
+							</div>
+							<div class="leave-request__step-description">
+								Our specialist will arrive for measurements per day
+								contact, or appoint a date convenient for you
+							</div>
+						</div>
+						<div class="leave-request__step">
+							<div class="leave-request__step-number">
+								02
+							</div>
+							<div class="leave-request__step-description leave-request__step-description_small">
+								Free metering
+							</div>
+						</div>
+						<div class="leave-request__step">
+							<div class="leave-request__step-number">
+								03
+							</div>
+							<div class="leave-request__step-description leave-request__step-description_small">
+								Free consultation
+							</div>
+						</div>
+						<div class="leave-request__step">
+							<div class="leave-request__step-number">
+								04
+							</div>
+							<div class="leave-request__step-description leave-request__step-description_small">
+								Get a cost estimate and<br>
+								the timing of your future repairs
+							</div>
+						</div>
+					</div>
 
+					<div class="leave-request__form">
+						<div class="leave-request__form-container">
+							<form method="POST" action="#">
+								<div class="leave-request__label">
+									Leave a request for free
+									departure of the measurer
+								</div>
+								<div class="input-item input-item_white-color">
+									<label for="clientName2">Name</label>
+									<input class="leave-request__input" type="text" name="clientName" placeholder="What is your name:"
+										id="clientName2" required>
+								</div>
+								<div class="input-item input-item_white-color">
+									<label for="clientPhoneNumber2">Phone</label>
+									<input class="leave-request__input" type="text" name="clientPhoneNumber"
+										placeholder="Your phone number:" id="clientPhoneNumber2" required>
+								</div>
+								<div class="input-item input-item_white-color">
+									<label for="clientEmail">Email</label>
+									<input class="leave-request__input" type="email" name="clientEmail" placeholder="Your email:"
+										id="clientEmail" required>
+								</div>
+								<div class="input-item-checkbox">
+									<label class="input-item-checkbox__label" for="isAgreeCheckbox2">
+										<input type="checkbox" name="isAgree" id="isAgreeCheckbox2" value="agree" required>
+										I agree to the processing of personal data
+									</label>
+								</div>
+								<div>
+									<input type="submit" class="btn btn_large leave-request__btn" value="Call the measurer">
+								</div>
+							</form>
+							<div class="leave-request__money-box">
+								Help save 10 - 20% of the<br>
+								cost of materials
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="leave-request__form">
-
-				</div>
-			</section>
+			</section><!-- ./leave-request -->
 
 			<section class="realize-fantasies">
 				<div class="realize-fantasies__wrap">
@@ -330,14 +401,14 @@
 							<button></button>
 						</div>
 					</div>
-					<di v class="types-of-repair__item">
+					<div class="types-of-repair__item">
 						<div class="types-of-repair__img">
 
 						</div>
 						<div class="types-of-repair__description">
 							<button></button>
 						</div>
-					</di>
+					</div>
 					<div class="types-of-repair__item">
 						<div class="types-of-repair__img">
 

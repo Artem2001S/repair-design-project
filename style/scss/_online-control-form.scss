@@ -40,24 +40,8 @@
     margin-top: 4.5rem;
 
     &-checkbox {
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin-top: 1.75rem;
-      margin-right: 6rem;
-
       & label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: $text-black;
-      }
-
-      & label input[type="checkbox"] {
-        width: 18px;
-        height: 18px;
-        margin: 0;
-        margin-right: 0.45rem;
       }
     }
 
@@ -136,14 +120,14 @@
     }
     &__item {
       & label {
-				color: rgba($color: $white, $alpha: 0.5);
-				font-size: 15px;
-				padding-bottom: 5px;
+        color: rgba($color: $white, $alpha: 0.5);
+        font-size: 15px;
+        padding-bottom: 5px;
       }
 
       & input {
-				color: $white;
-				border-color: rgba($color: $white, $alpha: 0.7);
+        color: $white;
+        border-color: rgba($color: $white, $alpha: 0.7);
 
         &::placeholder {
           color: $white;
@@ -156,16 +140,16 @@
         order: 1;
 
         & label {
-					color: $white;
-					font-size: 0.88rem;
+          color: $white;
+          font-size: 0.88rem;
         }
       }
 
       &-button {
         order: 2;
         & input {
-					min-width: 340px;
-					font-size: 0.83rem;
+          min-width: 340px;
+          font-size: 0.83rem;
         }
       }
     }
