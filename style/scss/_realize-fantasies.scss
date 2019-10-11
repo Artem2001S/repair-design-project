@@ -1,0 +1,274 @@
+.realize-fantasies {
+  width: 100%;
+  max-width: 1440px;
+  height: 864px;
+  position: relative;
+  z-index: 2;
+  margin-top: 180px;
+
+  background: url("../../assets/img/realize-fantasies/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &::before {
+    position: relative;
+    z-index: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 4.5rem;
+  }
+
+  &__title {
+    margin-top: 6.2rem;
+    margin-bottom: 2rem;
+
+    font-family: "Yeseva One", $additionalFonts;
+    font-size: 1.35rem;
+    line-height: 1.85rem;
+    text-transform: uppercase;
+    color: $gold;
+  }
+
+  &__description {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__category {
+    display: inline-block;
+    color: $white;
+    font-family: "Proxima Nova", $additionalFonts;
+    font-size: 1rem;
+    line-height: 1.45rem;
+    & + & {
+      margin-top: 1rem;
+    }
+
+    &_active {
+      & span {
+        border-bottom: 1px solid $gold;
+        color: $gold;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 68%;
+
+    &-item {
+      position: relative;
+      &:nth-child(1) {
+        top: -2rem;
+      }
+      &:nth-child(2) {
+        top: -5.5rem;
+      }
+      display: flex;
+      flex-direction: column;
+
+      & img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__mobile-slider {
+    display: none;
+    &-wrap {
+      position: relative;
+      max-width: 490px;
+      & img {
+        width: 490px;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: calc(50% - 18px);
+    width: 36px;
+    height: 36px;
+    background-color: $gold;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 0px 15px rgba($color: $gold, $alpha: 0.5);
+    }
+
+    &_right {
+      background-image: url("../../assets/img/projects/right-arrow_mobile.svg");
+      right: 14px;
+    }
+
+    &_left {
+      left: 14px;
+      background-image: url("../../assets/img/projects/left-arrow_big.svg");
+    }
+  }
+}
+
+@media (max-width: 1145px) {
+  .realize-fantasies {
+    &__about {
+      padding-left: 3rem;
+    }
+
+    &__gallery-item {
+      &:nth-child(1) {
+        & img + img {
+          margin-top: 120px;
+        }
+      }
+
+      &:nth-child(2) {
+        top: -2.5rem;
+        & img + img {
+          margin-top: 40px;
+        }
+      }
+      & img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .realize-fantasies {
+    &__gallery {
+      &-item {
+        &:nth-child(1) {
+          top: 50px;
+          & img + img {
+            margin-top: 20px;
+          }
+        }
+
+        &:nth-child(2) {
+          top: 6rem;
+          & img + img {
+            margin-top: 40px;
+          }
+        }
+        & img {
+          width: 260px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .realize-fantasies {
+    &__gallery {
+      &-item {
+        & img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 735px) {
+  .realize-fantasies {
+		height: auto;
+    margin-top: 340px;
+    background: #181818;
+    &::before {
+      display: none;
+      visibility: hidden;
+      background: $title-black;
+    }
+
+    &__mobile-slider {
+      display: block;
+    }
+
+    &__gallery {
+      display: none;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__about {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-left: 0;
+      margin-top: -240px;
+    }
+
+    &__description {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .realize-fantasies {
+    margin-top: 300px;
+
+    &__about {
+      margin-top: -220px;
+    }
+
+    &__mobile-slider {
+      &-wrap {
+        width: 410px;
+        & img {
+          width: 410px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .realize-fantasies {
+    margin-top: 280px;
+    &__about {
+      margin-top: -190px;
+    }
+
+    &__mobile-slider {
+      &-wrap {
+        width: 340px;
+        & img {
+          width: 340px;
+        }
+      }
+    }
+  }
+}

@@ -1752,6 +1752,276 @@ input::placeholder {
   }
 }
 
+.realize-fantasies {
+  width: 100%;
+  max-width: 1440px;
+  height: 864px;
+  position: relative;
+  z-index: 2;
+  margin-top: 180px;
+  background: url("../../assets/img/realize-fantasies/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.realize-fantasies::before {
+  position: relative;
+  z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.realize-fantasies__wrap {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.realize-fantasies__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  padding-left: 4.5rem;
+}
+
+.realize-fantasies__title {
+  margin-top: 6.2rem;
+  margin-bottom: 2rem;
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-size: 1.35rem;
+  line-height: 1.85rem;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.realize-fantasies__description {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.realize-fantasies__category {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Proxima Nova", sans-serif, "Tahoma";
+  font-size: 1rem;
+  line-height: 1.45rem;
+}
+
+.realize-fantasies__category + .realize-fantasies__category {
+  margin-top: 1rem;
+}
+
+.realize-fantasies__category_active span {
+  border-bottom: 1px solid #e3b873;
+  color: #e3b873;
+}
+
+.realize-fantasies__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 68%;
+}
+
+.realize-fantasies__gallery-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.realize-fantasies__gallery-item:nth-child(1) {
+  top: -2rem;
+}
+
+.realize-fantasies__gallery-item:nth-child(2) {
+  top: -5.5rem;
+}
+
+.realize-fantasies__gallery-item img {
+  margin-bottom: 2rem;
+}
+
+.realize-fantasies__mobile-slider {
+  display: none;
+}
+
+.realize-fantasies__mobile-slider-wrap {
+  position: relative;
+  max-width: 490px;
+}
+
+.realize-fantasies__mobile-slider-wrap img {
+  width: 490px;
+}
+
+.realize-fantasies__arrow {
+  position: absolute;
+  top: calc(50% - 18px);
+  width: 36px;
+  height: 36px;
+  background-color: #e3b873;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.realize-fantasies__arrow:hover, .realize-fantasies__arrow:active, .realize-fantasies__arrow:focus {
+  -webkit-box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+          box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+}
+
+.realize-fantasies__arrow_right {
+  background-image: url("../../assets/img/projects/right-arrow_mobile.svg");
+  right: 14px;
+}
+
+.realize-fantasies__arrow_left {
+  left: 14px;
+  background-image: url("../../assets/img/projects/left-arrow_big.svg");
+}
+
+@media (max-width: 1145px) {
+  .realize-fantasies__about {
+    padding-left: 3rem;
+  }
+  .realize-fantasies__gallery-item:nth-child(1) img + img {
+    margin-top: 120px;
+  }
+  .realize-fantasies__gallery-item:nth-child(2) {
+    top: -2.5rem;
+  }
+  .realize-fantasies__gallery-item:nth-child(2) img + img {
+    margin-top: 40px;
+  }
+  .realize-fantasies__gallery-item img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 980px) {
+  .realize-fantasies__gallery-item:nth-child(1) {
+    top: 50px;
+  }
+  .realize-fantasies__gallery-item:nth-child(1) img + img {
+    margin-top: 20px;
+  }
+  .realize-fantasies__gallery-item:nth-child(2) {
+    top: 6rem;
+  }
+  .realize-fantasies__gallery-item:nth-child(2) img + img {
+    margin-top: 40px;
+  }
+  .realize-fantasies__gallery-item img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 800px) {
+  .realize-fantasies__gallery-item img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 735px) {
+  .realize-fantasies {
+    height: auto;
+    margin-top: 340px;
+    background: #181818;
+  }
+  .realize-fantasies::before {
+    display: none;
+    visibility: hidden;
+    background: #181818;
+  }
+  .realize-fantasies__mobile-slider {
+    display: block;
+  }
+  .realize-fantasies__gallery {
+    display: none;
+  }
+  .realize-fantasies__title {
+    margin-top: 0;
+  }
+  .realize-fantasies__about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding-left: 0;
+    margin-top: -240px;
+  }
+  .realize-fantasies__description {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .realize-fantasies {
+    margin-top: 300px;
+  }
+  .realize-fantasies__about {
+    margin-top: -220px;
+  }
+  .realize-fantasies__mobile-slider-wrap {
+    width: 410px;
+  }
+  .realize-fantasies__mobile-slider-wrap img {
+    width: 410px;
+  }
+}
+
+@media (max-width: 460px) {
+  .realize-fantasies {
+    margin-top: 280px;
+  }
+  .realize-fantasies__about {
+    margin-top: -190px;
+  }
+  .realize-fantasies__mobile-slider-wrap {
+    width: 340px;
+  }
+  .realize-fantasies__mobile-slider-wrap img {
+    width: 340px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
