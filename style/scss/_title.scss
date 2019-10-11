@@ -35,3 +35,9 @@
     transform: translateX(-2.1rem) translateY(-19px);
   }
 }
+
+@media (max-width: 980px) {
+	.title {
+		font-size: 1.3rem;
+	}
+}

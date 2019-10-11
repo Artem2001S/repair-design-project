@@ -1,0 +1,54 @@
+.design-project {
+  padding-top: 150px;
+  &__label {
+    margin-top: 1.2rem;
+
+    font-family: "FuturaBookC";
+    font-size: 1rem;
+    line-height: 1.45rem;
+    text-align: center;
+  }
+
+  &__hided-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .design-project {
+    background-color: $title-black;
+    padding-top: 58px;
+    &__title,
+    &__label {
+      color: $white;
+    }
+
+    &__hided-list-items {
+      display: none;
+    }
+
+    &__hided-dots {
+      display: initial;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .design-project {
+    &__label {
+      max-width: 390px;
+      margin: auto;
+      margin-top: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .design-project {
+    &__label {
+      max-width: 340px;
+      margin: auto;
+      margin-top: 1.2rem;
+    }
+  }
+}

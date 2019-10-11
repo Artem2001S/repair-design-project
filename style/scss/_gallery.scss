@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 1.68rem;
+  margin-top: 1.88rem;
   width: 100%;
   max-width: 1276px;
   padding: 0 20px;
@@ -137,12 +137,12 @@
       & + & {
         margin-top: 4.5em;
       }
-		}
-		
-		&__img {
+    }
+
+    &__img {
       & img {
-				width: 100%;
-				max-width: 425px;
+        width: 100%;
+        max-width: 425px;
       }
     }
   }
@@ -158,4 +158,11 @@
       height: 40px;
     }
   }
+}
+@media (max-width: 375px) {
+  .gallery {
+		&__description {
+			margin-left: 0;
+		}
+	}
 }
