@@ -1,26 +1,11 @@
 .online-control-form {
   &__line {
-    display: block;
-    margin: auto;
     margin-top: 3.1rem;
-
-    width: 55px;
-    height: 2px;
-
-    background: $gold;
   }
 
   &__label {
-    margin: auto;
     margin-top: 1.55rem;
-    width: 100%;
     max-width: 681px;
-
-    font-family: "FuturaBookC", $additionalFonts;
-    font-size: 1rem;
-    line-height: 1.7rem;
-    text-align: center;
-
     color: $text-black;
   }
 
@@ -53,13 +38,6 @@
 
 // media ------------------------------
 
-@media (max-width: 980px) {
-  .online-control-form {
-    &__label {
-      font-size: 1.1rem;
-    }
-  }
-}
 
 @media (max-width: 780px) {
   .online-control-form {
@@ -102,7 +80,6 @@
     &__label {
       color: $white;
       max-width: 340px;
-      font-size: 0.77rem;
     }
 
     &__br {
