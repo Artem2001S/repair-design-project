@@ -2052,6 +2052,7 @@ input::placeholder {
 
 @media (max-width: 780px) {
   .design-project {
+    padding-bottom: 50px;
     background-color: #181818;
     padding-top: 58px;
   }
@@ -2087,7 +2088,186 @@ input::placeholder {
   width: 100%;
   background-color: #131313;
   margin-top: -430px;
-  padding-bottom: 430px;
+  padding-top: 430px;
+}
+
+.how-we-working__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 30px;
+}
+
+.how-we-working__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+}
+
+.how-we-working__suptitle {
+  padding-bottom: 0.6rem;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+
+.how-we-working__title {
+  position: relative;
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.how-we-working__title::after {
+  content: "";
+  position: absolute;
+  left: 9.1rem;
+  bottom: 0.9rem;
+  width: 4.6rem;
+  height: 1px;
+  background: #e3b873;
+}
+
+.how-we-working__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4.4rem;
+}
+
+.how-we-working__content-title {
+  margin-top: 1.1rem;
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.how-we-working__content-description {
+  max-width: 337px;
+  margin-top: 1rem;
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  color: #ffffff;
+}
+
+.how-we-working__current-step {
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.how-we-working__control-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.5rem;
+}
+
+.how-we-working__stages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.how-we-working__stages-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-display: column;
+  padding-top: 100px;
+}
+
+.how-we-working__stages-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how-we-working__stages-row + .how-we-working__stages-row {
+  margin-top: 38px;
+}
+
+.how-we-working__img {
+  margin-top: 50px;
+}
+
+.how-we-working__img img {
+  width: 100%;
+  max-width: 765px;
+  height: auto;
+}
+
+@media (max-width: 780px) {
+  .how-we-working {
+    display: none;
+  }
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 127px;
+}
+
+.step_disabled {
+  opacity: 0.25;
+}
+
+.step__title {
+  padding-bottom: 10px;
+  font-family: "Yeseva One", sans-serif, "Tahoma";
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.step__title span {
+  border-bottom: 1px solid #e3b873;
+}
+
+.step__description {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #ffffff;
 }
 
 * {

@@ -1,0 +1,29 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  width: 127px;
+  &_disabled {
+    opacity: 0.25;
+  }
+
+  &__title {
+		padding-bottom: 10px;
+
+		font-family: "Yeseva One", $additionalFonts;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+
+		color: $white;
+		& span {
+			border-bottom: 1px solid $gold;
+		}
+  }
+
+  &__description {
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 0.75rem;
+		line-height: 1rem;
+		color: $white;
+  }
+}

@@ -1,8 +1,122 @@
 .how-we-working {
-	height: 1615px;
-	width: 100%;
-	background-color: $black;
+  height: 1615px;
+  width: 100%;
+  background-color: $black;
 
-	margin-top: -430px;
-	padding-bottom: 430px;
+  margin-top: -430px;
+  padding-top: 430px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+
+  &__suptitle {
+    padding-bottom: 0.6rem;
+
+    font-family: "FuturaBookC", $additionalFonts;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $white;
+  }
+
+  &__title {
+    position: relative;
+    font-family: "Yeseva One", $additionalFonts;
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+
+    color: $gold;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 9.1rem;
+      bottom: 0.9rem;
+      width: 4.6rem;
+      height: 1px;
+      background: $gold;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.4rem;
+
+    &-title {
+      margin-top: 1.1rem;
+
+      font-family: "Yeseva One", $additionalFonts;
+      font-size: 0.75rem;
+      line-height: 1.1rem;
+      text-transform: uppercase;
+      color: $gold;
+    }
+
+    &-description {
+      max-width: 337px;
+      margin-top: 1rem;
+      font-family: "FuturaBookC", $additionalFonts;
+      font-size: 0.75rem;
+      line-height: 1.1rem;
+      color: $white;
+    }
+  }
+
+  &__current-step {
+    font-family: "Yeseva One", $additionalFonts;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__control-panel {
+    display: flex;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+
+  &__stages {
+    display: flex;
+    flex-direction: column;
+
+    &-container {
+      display: flex;
+      font-display: column;
+      padding-top: 100px;
+      // padding-right: 30px;
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & + & {
+        margin-top: 38px;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      max-width: 765px;
+      height: auto;
+    }
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  .how-we-working {
+    display: none;
+  }
 }
