@@ -1,0 +1,145 @@
+.contact-information {
+  position: relative;
+  background: black;
+  padding: 260px 0 80px 0;
+
+  background: url("../../assets/img/contact-information/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-width: 589px;
+    margin: auto;
+
+    font-family: "Yeseva One";
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $gold;
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    & .contact-information__icon + .contact-information__icon {
+      margin-left: 15px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+    background: $gold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+  }
+}
+
+.line-break {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .contact-information {
+    padding-bottom: 50px;
+    &__map {
+      img {
+        width: 650px;
+      }
+    }
+
+    &__title {
+      max-width: 480px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-information {
+    padding-bottom: 50px;
+    &__map {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .contact-information {
+    background: $title-black;
+    padding-top: 290px;
+  }
+}
+
+@media (max-width: 558px) {
+  .contact-information {
+    &__map {
+      img {
+        width: 430px;
+      }
+    }
+    &__title {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-information {
+    padding-top: 20px;
+    padding-bottom: 38px;
+    &__map {
+      margin-top: 10px;
+      order: 1;
+      img {
+        width: 340px;
+      }
+    }
+
+    &__title {
+      order: 2;
+      margin-top: 38px;
+      max-width: 340px;
+    }
+    &__icons {
+      order: 3;
+    }
+  }
+  .line-break {
+    display: block;
+  }
+}

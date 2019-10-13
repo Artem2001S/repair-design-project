@@ -355,7 +355,7 @@
 									<input class="leave-request__input" type="email" name="clientEmail" placeholder="Your email:"
 										id="clientEmail" required>
 								</div>
-								<div class="input-item-checkbox">
+								<div class="input-item-checkbox leave-request__checkbox">
 									<label class="input-item-checkbox__label" for="isAgreeCheckbox2">
 										<input type="checkbox" name="isAgree" id="isAgreeCheckbox2" value="agree" required>
 										I agree to the processing of personal data
@@ -768,22 +768,55 @@
 				</div>
 			</section><!-- ./our-clients -->
 
-			<section class="contact-form">
-				<div class="contact-form__title"></div>
-				<form method="GET" action="#">
-					<!-- inputs -->
-				</form>
-			</section>
 
-			<section class="contact-inforamtion">
-				<div class="contact-information__title">
+			<section class="contact-information">
+				<section class="contact-form">
+					<div class="contact-form__title">have any questions?</div>
+					<form class="contact-form__form" method="POST" action="">
+						<div class="input-item input-item_white-color">
+							<label for="clientName3">Name</label>
+							<input class="contact-form__input" type="text" name="clientName" placeholder="What is your name:"
+								id="clientName3" required>
+						</div>
 
-				</div>
-				<div class="contact-information__icons">
-					<!-- icons -->
-				</div>
-				<div class="contact-information__map">
+						<div class="input-item input-item_white-color">
+							<label for="clientPhone3">Phone</label>
+							<input class="contact-form__input" type="text" name="clientPhone" placeholder="Your phone number:"
+								id="clientPhone3" required>
+						</div>
 
+						<div class="input-item input-item_white-color">
+							<label for="clientQuestion">Question</label>
+							<input class="contact-form__input" type="text" name="clientQuestion" placeholder="I want to know:"
+								id="clientQuestion" required>
+						</div>
+						<div class="input-item-checkbox">
+							<label class="input-item-checkbox__label" for="isAgreeCheckbox3">
+								<input type="checkbox" name="isAgree" id="isAgreeCheckbox3" value="agree" required>
+								I agree to the processing of personal data
+							</label>
+						</div>
+						<div class="contact-form__btn">
+							<input type="submit" class="btn btn_large " value="Submit">
+						</div>
+					</form>
+				</section><!-- ./contact-form -->
+				<div class="contact-information__wrap">
+					<div class="contact-information__title o2">
+						Rostov-on-Don, Nansen St., 239 Shopping Center
+						Decorum <br class="line-break"> Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a>
+					</div>
+					<div class="contact-information__icons o3">
+						<div class="contact-information__icon">
+							<img src="./assets/img/contact-information/mail.svg" alt="Email">
+						</div>
+						<div class="contact-information__icon">
+							<img src="./assets/img/contact-information/insta.svg" alt="Instagram">
+						</div>
+					</div>
+					<div class="contact-information__map o1">
+						<img src="./assets/img/contact-information/map.jpg" alt="Map">
+					</div>
 				</div>
 			</section>
 		</main>

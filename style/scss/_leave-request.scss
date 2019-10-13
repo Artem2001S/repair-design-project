@@ -105,19 +105,24 @@
 
         background: $black;
 
-        & div + div {
+        & div.input-item + div.input-item {
           margin-top: 50px;
         }
 
-        & .input-item-checkbox {
-          margin-top: 1rem;
-        }
 
         & div input {
           border-color: rgba($color: $white, $alpha: 0.7);
         }
       }
     }
+  }
+
+  &__checkbox {
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		label {
+			justify-content: flex-start;
+		}
   }
 
   &__label {
@@ -138,9 +143,9 @@
 
   &__money-box {
     position: relative;
-		padding-left: 100px;
-		margin: auto;
-		max-width: 350px;
+    padding-left: 100px;
+    margin: auto;
+    max-width: 350px;
     margin-top: 50px;
 
     font-family: "FuturaDemiC", $additionalFonts;
@@ -200,7 +205,13 @@
     &__btn {
       right: initial;
       left: calc(50% - 115px);
-    }
+		}
+		
+		&__checkbox {
+			label {
+				justify-content: center;
+			}
+		}
   }
 }
 

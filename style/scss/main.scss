@@ -28,7 +28,6 @@ html {
 @import "./line";
 @import "./client-card";
 
-
 @import "./header";
 @import "./banner";
 @import "./projects";
@@ -44,8 +43,9 @@ html {
 @import "./how-we-working";
 @import "./our-team";
 @import "./our-clients";
-
-
+@import "./contact-form";
+@import "./contact-information";
+@import "./footer";
 
 * {
   box-sizing: border-box;
@@ -61,7 +61,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .gold-text {

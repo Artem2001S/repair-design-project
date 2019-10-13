@@ -25,6 +25,8 @@
     margin-top: 4.5rem;
 
     &-checkbox {
+      margin-top: 1.75rem;
+      margin-right: 6rem;
       & label {
         color: $text-black;
       }
@@ -37,7 +39,6 @@
 }
 
 // media ------------------------------
-
 
 @media (max-width: 780px) {
   .online-control-form {
