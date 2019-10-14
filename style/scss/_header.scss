@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 22px;
   padding: 24px 8px 22px 15px;
   background: $black;
 
-  &-list {
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +43,7 @@
 
 @media (max-width: 792px) {
   .header {
-    &-list {
+    &__list {
       flex-wrap: wrap;
     }
     &__contacts + .btn {

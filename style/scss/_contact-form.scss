@@ -67,7 +67,6 @@
 
 @media (max-width: 630px) {
   .contact-form {
-    height: auto;
     background: $title-black;
     &__form {
       flex-direction: column;
@@ -115,7 +114,19 @@
 
 @media (max-width: 450px) {
   .contact-form {
-		position: static;
+    position: static;
 		padding-bottom: 20px;
+		height: auto;
+
+		&__form {
+			width: 100%;
+			height: auto;
+		}
+
+    &__btn {
+			input {
+				height: 51px;
+			}
+    }
   }
 }

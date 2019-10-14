@@ -1,3 +1,61 @@
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8px 50px 15px;
+	background: $black;
 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1256px;
+	}
+
+	&__phone-number {
+    color: $gold;
+    font-family: "FuturaDemiC", $additionalFonts;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-bottom: 1px solid $gold;
+
+    transition: color 0.4s;
+
+    &:hover {
+      color: $white;
+      border-bottom: none;
+    }
+  }
+}
+
+//----------- media
+
+@media (max-width: 792px) {
+  .footer {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__contacts + .btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .footer {
+    &__phone-number {
+			color: $white;
+			border-bottom: none;
+			&:hover,:active {
+				color: $gold;
+			}
+    }
+  }
+}
+
+@media (max-width: 375px) {
+	.footer {
+		display: none;
+	}
 }

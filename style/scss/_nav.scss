@@ -15,7 +15,11 @@
 
     &:hover {
       color: $gold;
-    }
+		}
+		
+		& a {
+			font-size: inherit;
+		}
   }
 }
 
