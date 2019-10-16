@@ -208,6 +208,8 @@
 		}
 		
 		&__checkbox {
+			display: flex;
+			justify-content: center;
 			label {
 				justify-content: center;
 			}

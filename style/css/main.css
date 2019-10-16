@@ -118,6 +118,10 @@ html {
   min-width: 10rem;
 }
 
+.btn_font-15 {
+  font-size: 0.75rem;
+}
+
 .btn_transparent {
   background: transparent;
 }
@@ -157,12 +161,15 @@ html {
 }
 
 .input-item-checkbox {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   text-align: center;
 }
 
 .input-item-checkbox__label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,20 +180,12 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+  padding-left: 30px;
   font-family: "FuturaBookC", sans-serif, "Tahoma";
   font-size: 16px;
 }
 
-.input-item-checkbox__label input[type="checkbox"] {
-  position: relative;
-  display: block;
-  width: 18px;
-  height: 18px;
-  outline: none;
-  margin-right: 0.45rem;
-}
-
-.input-item-checkbox__label input[type="checkbox"]::before {
+.input-item-checkbox__label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -199,7 +198,13 @@ html {
   cursor: pointer;
 }
 
-.input-item-checkbox__label input[type="checkbox"]:checked::before {
+.input-item-checkbox input[type="checkbox"] {
+  width: auto;
+  opacity: 0;
+  position: absolute;
+}
+
+.input-item-checkbox input[type="checkbox"]:checked + .input-item-checkbox__label::before {
   background-color: #e3b873;
   background-image: url("../../assets/img/input-item/checkbox-tick.svg");
   background-repeat: no-repeat;
@@ -229,6 +234,11 @@ html {
 }
 
 .input-item_white-color input::placeholder {
+  color: #ffffff;
+}
+
+.input-item_white-color input::-moz-placeholder {
+  opacity: 1;
   color: #ffffff;
 }
 
@@ -271,6 +281,13 @@ input::-ms-input-placeholder {
 }
 
 input::placeholder {
+  font-family: "FuturaBookC", sans-serif, "Tahoma";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #363636;
+}
+
+input::-moz-placeholder {
   font-family: "FuturaBookC", sans-serif, "Tahoma";
   font-size: 0.9rem;
   line-height: 1.2rem;
@@ -1513,6 +1530,15 @@ input::placeholder {
 }
 
 .online-control-form__form-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1.75rem;
   margin-right: 6rem;
 }
@@ -2028,6 +2054,14 @@ input::placeholder {
   .leave-request__btn {
     right: initial;
     left: calc(50% - 115px);
+  }
+  .leave-request__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .leave-request__checkbox label {
     -webkit-box-pack: center;
@@ -2705,6 +2739,18 @@ input::placeholder {
 
 .contact-form__form .input-item:nth-child(3) input {
   width: 100%;
+}
+
+.contact-form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-form__btn {

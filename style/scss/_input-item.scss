@@ -3,51 +3,57 @@
   flex-direction: column;
 
   &-checkbox {
-    display: block;
+    display: flex;
     width: 100%;
     text-align: center;
 
     &__label {
+      position: relative;
+
       display: flex;
       align-items: center;
       justify-content: center;
       color: $white;
-
+			padding-left: 30px;
       font-family: "FuturaBookC", $additionalFonts;
       font-size: 16px;
     }
 
-    &__label input[type="checkbox"] {
-      position: relative;
-      display: block;
+    &__label::before {
+      // content: "";
+      // position: absolute;
+      // display: block;
+      // width: 18px;
+      // height: 18px;
+      // outline: none;
+      // margin-right: 0.45rem;
+      
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 18px;
-			height: 18px;
-			outline: none;
-      margin-right: 0.45rem;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 18px;
-        height: 18px;
+      height: 18px;
 
-        background: $white;
-        border: 1px solid $gold;
-        border-radius: 1px;
-			
-				cursor: pointer;
-			}
+      background: $white;
+      border: 1px solid $gold;
+      border-radius: 1px;
 
-      &:checked::before {
+      cursor: pointer;
+    }
+		
+		& input[type="checkbox"] { 
+			width: auto;
+			opacity: 0;
+			position: absolute;
+			&:checked + .input-item-checkbox__label::before {
         background-color: $gold;
         background-image: url("../../assets/img/input-item/checkbox-tick.svg");
         background-repeat: no-repeat;
         background-position: center center;
       }
-    }
+		}
   }
-
 
   & label {
     font-family: "FuturaBookC", $additionalFonts;
@@ -60,8 +66,12 @@
       color: $white;
 
       &::placeholder {
-        color: $white;
-      }
+				color: $white;
+			}
+			&::-moz-placeholder {
+				opacity: 1;
+				color: $white;
+			}
     }
 
     & label {
@@ -70,26 +80,31 @@
   }
 }
 
-
 input {
-	width: 231px;
-	padding-bottom: 0.2rem;
-	background: transparent;
+  width: 231px;
+  padding-bottom: 0.2rem;
+  background: transparent;
 
-	font-family: "FuturaBookC", $additionalFonts;
-	font-size: 0.9rem;
-	line-height: 1.2rem;
+  font-family: "FuturaBookC", $additionalFonts;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 
-	color: $text-black;
+  color: $text-black;
 
-	border: none;
-	border-bottom: 1px solid rgba($color: $text-black, $alpha: 0.3);
-	outline: none;
+  border: none;
+  border-bottom: 1px solid rgba($color: $text-black, $alpha: 0.3);
+  outline: none;
 
-	&::placeholder {
+  &::placeholder {
+    font-family: "FuturaBookC", $additionalFonts;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: $text-black;
+	}
+	&::-moz-placeholder {
 		font-family: "FuturaBookC", $additionalFonts;
-		font-size: 0.9rem;
-		line-height: 1.2rem;
-		color: $text-black;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: $text-black;
 	}
 }
