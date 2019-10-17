@@ -19,8 +19,10 @@ html {
 }
 
 @import "./fonts";
+@import "./logo";
 @import "./nav";
 @import "./btn";
+@import "./dots";
 @import "./input-item";
 @import "./step";
 @import "./worker";
@@ -62,10 +64,6 @@ body {
   margin: 0 auto;
 
   overflow: hidden;
-}
-
-.gold-text {
-  color: $gold;
 }
 
 @media (max-width: 980px) {

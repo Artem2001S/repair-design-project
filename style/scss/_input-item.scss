@@ -20,14 +20,6 @@
     }
 
     &__label::before {
-      // content: "";
-      // position: absolute;
-      // display: block;
-      // width: 18px;
-      // height: 18px;
-      // outline: none;
-      // margin-right: 0.45rem;
-      
       content: "";
       position: absolute;
       left: 0;
@@ -106,5 +98,15 @@ input {
     font-size: 0.9rem;
     line-height: 1.2rem;
     color: $text-black;
+	}
+}
+
+@media (max-width: 375px) {
+	input[type="checkbox"] {
+		font-size: 15px;
+	}
+
+	input {
+		font-size: 18px;
 	}
 }

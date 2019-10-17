@@ -29,16 +29,6 @@
   }
 }
 
-.logo {
-  &__text {
-    margin: 0;
-    color: $gold;
-    font-family: "FuturaDemiC", $additionalFonts;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-  }
-}
-
 //----------- media
 
 @media (max-width: 792px) {

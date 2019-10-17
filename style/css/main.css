@@ -42,6 +42,15 @@ html {
   font-style: normal;
 }
 
+.logo__text {
+  margin: 0;
+  color: #e3b873;
+  font-family: "FuturaDemiC", sans-serif, "Tahoma";
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +156,43 @@ html {
 @media (max-width: 375px) {
   .btn {
     border-radius: 1px;
+    font-size: 13px;
   }
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dots__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s, background-color 0.3s;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.dots__dot:hover, .dots__dot:active {
+  background: #e3b873;
+  opacity: 1;
+}
+
+.dots__dot_active {
+  opacity: 1;
+}
+
+.dots__dot_active:hover {
+  background: #ffffff;
+  opacity: 0.7;
+}
+
+.dots__dot + .dots__dot {
+  margin-left: 0.9rem;
 }
 
 .input-item {
@@ -292,6 +337,15 @@ input::-moz-placeholder {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: #363636;
+}
+
+@media (max-width: 375px) {
+  input[type="checkbox"] {
+    font-size: 15px;
+  }
+  input {
+    font-size: 18px;
+  }
 }
 
 .step {
@@ -468,6 +522,12 @@ input::-moz-placeholder {
   }
 }
 
+@media (max-width: 480px) {
+  .label {
+    font-size: 0.83rem;
+  }
+}
+
 .line {
   display: block;
   margin: auto;
@@ -616,14 +676,6 @@ input::-moz-placeholder {
   border-bottom: none;
 }
 
-.logo__text {
-  margin: 0;
-  color: #e3b873;
-  font-family: "FuturaDemiC", sans-serif, "Tahoma";
-  font-size: 0.7rem;
-  text-transform: uppercase;
-}
-
 @media (max-width: 792px) {
   .header__list {
     -ms-flex-wrap: wrap;
@@ -679,11 +731,13 @@ input::-moz-placeholder {
   max-width: 44%;
   color: #ffffff;
   font-family: "Yeseva One", sans-serif, "Tahoma";
-  font-style: normal;
-  font-weight: normal;
   font-size: 2rem;
   line-height: 2.65rem;
   text-transform: uppercase;
+}
+
+.banner__title_gold {
+  color: #e3b873;
 }
 
 .banner__description {
@@ -723,7 +777,7 @@ input::-moz-placeholder {
           transform: translateY(50%);
   background: #131313;
   color: #ffffff;
-  font-family: Yeseva One, sans-serif, "Tahoma";
+  font-family: "Yeseva One", sans-serif, "Tahoma";
   font-size: 0.7rem;
   line-height: 0.95px;
   text-transform: uppercase;
@@ -944,6 +998,10 @@ input::-moz-placeholder {
   }
   .banner__description {
     font-size: 1.05rem;
+    max-width: 305px;
+  }
+  .banner__btn {
+    min-height: 51px;
   }
 }
 
@@ -1099,6 +1157,9 @@ input::-moz-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   width: 61%;
 }
 
@@ -1145,18 +1206,25 @@ input::-moz-placeholder {
 }
 
 .projects__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 679px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .projects__img img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .projects__img img + img {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-left: 2rem;
 }
 
@@ -1179,41 +1247,6 @@ input::-moz-placeholder {
 .projects__right-arrow:hover {
   -webkit-box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
           box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
-}
-
-.dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.dots__dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  background: #ffffff;
-  border-radius: 50%;
-  opacity: 0.3;
-  cursor: pointer;
-  -webkit-transition: opacity 0.3s, background-color 0.3s;
-  transition: opacity 0.3s, background-color 0.3s;
-}
-
-.dots__dot:hover, .dots__dot:active {
-  background: #e3b873;
-  opacity: 1;
-}
-
-.dots__dot_active {
-  opacity: 1;
-}
-
-.dots__dot_active:hover {
-  background: #ffffff;
-  opacity: 0.7;
-}
-
-.dots__dot + .dots__dot {
-  margin-left: 0.9rem;
 }
 
 @media (max-width: 1241px) {
@@ -1313,8 +1346,12 @@ input::-moz-placeholder {
 }
 
 @media (max-width: 375px) {
+  .projects {
+    height: 1560px;
+  }
   .projects__label {
     text-align: center;
+    font-size: 14px;
   }
   .projects__description-title, .projects__description-label {
     font-size: 0.83rem;
@@ -1486,6 +1523,12 @@ input::-moz-placeholder {
   }
 }
 
+@media (max-width: 480px) {
+  .online-control {
+    margin-top: -790px;
+  }
+}
+
 .online-control-form__line {
   margin-top: 3.1rem;
 }
@@ -1637,6 +1680,18 @@ input::-moz-placeholder {
   .online-control-form__form-button input {
     min-width: 340px;
     font-size: 0.83rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .online-control-form__input {
+    min-width: 340px;
+  }
+  .online-control-form__form-checkbox label {
+    width: 340px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -2392,6 +2447,7 @@ input::-moz-placeholder {
     max-width: 340px;
     margin: auto;
     margin-top: 1.2rem;
+    font-size: 0.889rem;
   }
 }
 
@@ -2909,9 +2965,13 @@ input::-moz-placeholder {
   height: 28px;
   border-radius: 50%;
   background: #e3b873;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.25);
+          box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.25);
   cursor: pointer;
+}
+
+.contact-information__icon a {
+  font-size: 0px;
 }
 
 .contact-information__icon:active, .contact-information__icon:hover, .contact-information__icon:focus {
@@ -3019,6 +3079,12 @@ input::-moz-placeholder {
   }
 }
 
+@media (max-width: 375px) {
+  .contact-information__title {
+    font-size: 18px;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3103,10 +3169,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.gold-text {
-  color: #e3b873;
 }
 
 @media (max-width: 980px) {

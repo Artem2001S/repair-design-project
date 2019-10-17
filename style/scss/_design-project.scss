@@ -16,7 +16,7 @@
 
 @media (max-width: 780px) {
   .design-project {
-		padding-bottom: 50px;
+    padding-bottom: 50px;
     background-color: $title-black;
     padding-top: 58px;
     &__title,
@@ -49,7 +49,9 @@
     &__label {
       max-width: 340px;
       margin: auto;
-      margin-top: 1.2rem;
+			margin-top: 1.2rem;
+			font-size: 0.889rem;	
+			
     }
   }
 }

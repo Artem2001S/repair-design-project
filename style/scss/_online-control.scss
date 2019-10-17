@@ -51,11 +51,17 @@
 @media (max-width: 480px) {
   .online-control {
     margin-top: -761px;
-		&__video {
-			max-width: 340px;
-			& iframe {
-				height: 207px;
-			}
-		}
+    &__video {
+      max-width: 340px;
+      & iframe {
+        height: 207px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .online-control {
+    margin-top: -790px;
   }
 }

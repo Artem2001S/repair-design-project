@@ -29,12 +29,14 @@
     max-width: 44%;
     color: $white;
     font-family: "Yeseva One", $additionalFonts;
-    font-style: normal;
-    font-weight: normal;
     font-size: 2rem;
     line-height: 2.65rem;
     text-transform: uppercase;
-  }
+
+		&_gold {
+			color: $gold;
+		}
+	}
 
   &__description {
     margin-top: 1rem;
@@ -68,7 +70,7 @@
     background: $black;
     color: $white;
 
-    font-family: Yeseva One, $additionalFonts;
+    font-family: "Yeseva One", $additionalFonts;
     font-size: 0.7rem;
     line-height: 0.95px;
     text-transform: uppercase;
@@ -322,7 +324,12 @@
 		}
 		
     &__description {
-      font-size: 1.05rem;
-    }
+			font-size: 1.05rem;
+			max-width: 305px;
+		}
+		
+		&__btn {
+			min-height: 51px;
+		}
   }
 }
