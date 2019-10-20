@@ -1,5 +1,5 @@
 # Repair-design-project
-This project is made for rs-school. 
+This project was developed for RSschool. 
 
 [Technical specification](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-3/repair-design-project/repair-design-project-en.md)
 ## Getting start
